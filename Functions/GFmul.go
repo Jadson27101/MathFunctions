@@ -1,8 +1,6 @@
-package main
+package Functions
 
-import "fmt"
-
-func mulGF256(a uint64, b uint64) uint64 {
+func MulGF256(a uint64, b uint64) uint64 {
 	var result uint64 = 0
 	var counter uint64
 	var hi_bit uint64
@@ -18,7 +16,4 @@ func mulGF256(a uint64, b uint64) uint64 {
 		b >>= 1
 	}
 	return result
-}
-func main()  {
-	fmt.Println(mulGF256(6,24))
 }
